@@ -1,0 +1,57 @@
+{
+   "template":"aidmoit_v3",
+   "mappings":{
+         "properties":{
+            "TNE.date":{
+               "type":"date",
+               "format":"yyyy-MM-dd'T'HH:mm:ss"
+		},
+            "ent0_osm.centroid" :{
+               "ignore_malformed": true,
+               "type":"geo_point"	
+         },
+            "ent0_osm.extent" :{
+               "ignore_malformed": true,
+               "coerce":true,
+               "type":"geo_shape"	
+         },
+		"ent1_osm.centroid" :{
+               "ignore_malformed": true,
+               "type":"geo_point"
+         },
+            "ent1_osm.extent" :{
+               "ignore_malformed": true,
+               "coerce":true,
+               "type":"geo_shape"
+         },
+
+           "ent2_osm.centroid" :{
+               "ignore_malformed": true,
+               "type":"geo_point"
+         },
+            "ent2_osm.extent" :{
+               "ignore_malformed": true,
+               "coerce":true,
+               "type":"geo_shape"
+         },
+           "ent3_osm.centroid" :{
+               "ignore_malformed": true,
+               "type":"geo_point"
+         },
+            "ent3_osm.extent" :{
+               "ignore_malformed": true,
+               "coerce":true,             
+               "type":"geo_shape"
+         },
+           "ent4_osm.centroid" :{
+               "ignore_malformed": true,
+               "type":"geo_point"
+         },
+            "ent4_osm.extent" :{
+               "ignore_malformed": true,
+               "coerce":true,              
+               "type":"geo_shape"
+         }
+      }
+   }
+}
