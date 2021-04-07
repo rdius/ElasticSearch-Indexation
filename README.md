@@ -1,25 +1,33 @@
 # ElasticSearch-Indexation
 
 ## INSTALL
+`
 ES => https://www.elastic.co/guide/en/elasticsearch/reference/current/deb.html
 
 kibana => https://www.elastic.co/guide/en/kibana/current/deb.html
+`
 
 ## START
+`
 sudo systemctl start elasticsearch.service #start lesaticserach
 
 sudo systemctl start kibana.service #start kibana
+`
 
 ## LOGSTASH CONFIG FILE
 
-See .conf file
+_See .conf file_
 
 ## RUN 
+`
 sudo /usr/share/logstash/bin/logstash -f 'path_to_conf_file' #index data in elastic using logstash
+`
 
 ## CREATE AND DELETE INDEX
 
+`
 sudo curl -X PUT or DELETE "localhost:9200/nom_index?pretty" #to add or delete an index
+`
 
 ## BE CAREFUL
 1) Préparer les données d'entrées, le fichier à specifier dans le input du .conf de logstash
