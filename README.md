@@ -2,23 +2,28 @@
 
 ## INSTALL
 
-`
-ES => https://www.elastic.co/guide/en/elasticsearch/reference/current/deb.html
-`
+ElasticSearch
 
-`
-kibana => https://www.elastic.co/guide/en/kibana/current/deb.html
-`
+```
+https://www.elastic.co/guide/en/elasticsearch/reference/current/deb.html
+```
+
+
+kibana
+
+```
+https://www.elastic.co/guide/en/kibana/current/deb.html
+```
 
 ## START
 
-`
+```
 sudo systemctl start elasticsearch.service #start lesaticserach
-`
+```
 
-`
+```
 sudo systemctl start kibana.service #start kibana
-`
+```
 
 ## LOGSTASH CONFIG FILE
 
@@ -26,9 +31,9 @@ _See .conf file_
 
 ## RUN 
 
-`
+```
 sudo /usr/share/logstash/bin/logstash -f 'path_to_conf_file' #index data in elastic using logstash
-`
+```
 
 ## CREATE AND DELETE INDEX (In this example, you do not need to create an index, as it automatically done in the config file)
 
